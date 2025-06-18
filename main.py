@@ -1,3 +1,4 @@
+from stats import word_count
 def main():
     file_path = "books/frankenstein.txt"
     file_contents = read_file(file_path)
@@ -34,11 +35,7 @@ def list_char_count(letter_dict):
             print(f"The {character} character was found {num} times")
                 
 
-def word_count(text):
-    words = text.split()
-    num_words = len(words)
 
-    return num_words
 
 def letter_count(words):
     letters = {}
